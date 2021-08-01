@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Appeals</title>
+</head>
+
+<body>
+	<div class="container">
+		<!--Mobile-->
+		<div style="top: 30px;" class="moblie-logo">Potatoes</div>
+		<!--Mobile-->
+		<div style="top: 70px;" class="moblie-logo">Network</div>
+		<img src="background.png" id="draggable" alt="Potatoes Background" class="backgroundimage">
+		<!--Mobile-->
+		<img src="moblie-background.png" id="draggable" alt="Potatoes Background" class="moblie-backgroundimage">
+		<a href="https://discord.potatoes.network" target="_blank">
+			<img src="discord.png" class="discordlogo">
+		</a>
+		<div class="logo">Potatoes Network</div>
+	</div>
+	<div class="navigation">
+		<button class="fancytext button1 openapplications">Applications</button>
+		<button class="fancytext button1 openindex">Home</button>
+		<button  class="fancytext button1 openstore">Store</button>
+		<!--Mobile-->
+		<button class="moblie-fancytext button1 openapplications">Applications</button>
+		<!--Mobile-->
+		<button class="moblie-fancytext button1 openindex">Home</button>	
+		<!--Mobile-->
+		<button class="moblie-fancytext button1 openstore">Store</button>
+	</div>
+					 <iframe src="https://docs.google.com/forms/d/1Owzen1qGdbbU0qUzNNbOYqNQhyHkoXuH2ierf6rw6TI/viewform" width="900px" frameBorder="0" height="2860px" style=" margin-top: 10%; display: block;margin-left: auto;margin-right: auto;width: 80%;cursor: pointer;" ></iframe>
+		  
+</body>
+<script>
+	document.getElementById('draggable').setAttribute('draggable', false);
+	
+	function copyToClipboard(element) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(element).text()).select();
+			document.execCommand("copy");
+			$temp.remove();
+			alert ("You have copied the server ip")
+	}
+
+const parent = document.querySelector(".navigation");
+parent.addEventListener("click", function(e) {
+     const child = e.target.matches(".openstore, .openstore *");
+	 const child2 = e.target.matches(".openapplications, .openapplications *");
+	 const child3 = e.target.matches(".openindex, .openindex *");
+     if (child) {
+	 window.open("https://potatoes.shop","_blank")}
+	if (child2) {
+	 window.open("applications.html","_self")}
+	if (child3) {
+	 window.open("index.html","_self")}
+	 });
+	 
+	
+	btn.addEventListener('click', function () {
+    var x = window.innerWidth;
+    if (x > 768) {
+        //event.preventDefault();
+        modal.style.display = "block";
+    } else {
+        //event.preventDefault();
+    }
+});
+
+</script>
+
+</html>

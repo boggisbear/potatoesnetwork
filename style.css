@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	font-family: 'Roboto';
+	background-color: #F0F0EC;
+	color: #2F291E;
+}
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin-top: 0.2%;
+}
+.applications {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30%;
+	margin-top: 0.2%;
+}
+
+
+.moblie-applicationbuttons {
+position: absolute;
+width: 30%;
+margin: 10px;
+margin-right: 100px;
+
+}
+
+.applicationbuttons {
+position: absolute;
+width: 10%;
+margin: 10px;
+display: block;
+margin-right: 50px;
+}
+
+a {
+	background-color: green;
+}
+.serverip {
+	background-color: #FEE2AB;
+}
+.fancytext {
+	border: none;
+	background-color: #FEE2AB;
+	margin: 3%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0.5% 0px;
+	width: 15%;
+	font-size: 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 100;
+	transition-duration: 0.2s;
+	color: #2F291E;
+}
+.moblie-fancytext {
+	border: none;
+	background-color: #FEE2AB;
+	margin: 3%;
+	margin-bottom: 0;
+	margin-top: 10%;
+	padding: 2% 0px;
+	width: 40%;
+	font-size: 20px;
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 100;
+	transition-duration: 0.2s;
+	color: #2F291E;
+}
+.button1:hover {
+	background-color: #D5CD95;
+}
+.button2:hover {
+	background-color: #D8D8CE;
+}
+.CopyButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: #F0F0EC;
+	padding: 0.5% 0px;
+	width: 5%;
+	font-size: 18px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.abutton{
+	display:block;
+	position:absolute;
+	width:100px;
+	padding: 2% 4%;
+	left: 22%;
+	top: 23%;
+	
+}
+.moblie-CopyButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: #F0F0EC;
+	padding: 0.5% 0px;
+	width: 30%;
+	font-size: 18px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.discordlogo {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+	width: 2%;
+}
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.9em;
+	color: #2F291E;
+}
+.ipheader {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 8%;
+}
+.moblie-ipheader {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 34%;
+}
+.serveriptext {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 2%;
+}
+.moblie-serveriptext {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 2%;
+}
+.moblie-logo {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #2F291E;
+	font-size: 2em;
+}
+.backgroundimage {
+	width: 100%;
+}
+.moblie-backgroundimage {
+	width: 100%;
+}
+@media screen and (max-width: 767px) {
+	.logo {
+		display: none;
+	}
+	.backgroundimage {
+		display: none;
+	}
+	.discordlogo {
+		display: none;
+	}
+	.ipheader {
+		display: none;
+	}
+	.serveriptext {
+		display: none;
+	}
+	.fancytext {
+		display: none;
+	}
+	.CopyButton {
+		display: none;
+	}
+	.applicationbuttons {
+		display: none;
+	}
+	.backgroundimage {
+		display: none;
+	}
+	.backgroundimage {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.moblie-logo {
+		display: none;
+	}
+	.moblie-backgroundimage {
+		display: none;
+	}
+	.moblie-ipheader {
+		display: none;
+	}
+	.moblie-serveriptext {
+		display: none;
+	}
+	.moblie-fancytext {
+		display: none;
+	}
+	.moblie-CopyButton {
+		display: none;
+	}
+	.moblie-applicationbuttons {
+		display: none;
+	}
+	.moblie-applicationbuttons {
+		display: none;
+	}
+}
